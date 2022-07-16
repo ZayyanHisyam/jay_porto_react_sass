@@ -1,0 +1,62 @@
+.container
+    height: full;
+    position: relative;
+    background-color: black; 
+
+
+.app__homepage
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    // background: rgba(0, 0, 0, 0.8) !important
+    @media screen and (max-width: 900px) 
+        display: flex;
+        flex-direction: column;
+
+
+.app__homepage__img
+    user-select: none;
+    pointer-events: none;
+    z-index: 1;
+    img
+        height: 550px;
+
+
+
+.app__homepage__text
+    margin-right: 5px; 
+    z-index: 2;
+    text-align: right;
+    user-select: none;
+    pointer-events: none;
+    
+    p
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: white;
+
+
+.text__stroke
+    -webkit-text-stroke: 2px white;
+    -webkit-text-fill-color: transparent;    
+
+
+.footer__page
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 15px;
+    
+    .block__footer
+        width: 50%;
+        height: 5px;
+        background-color: white;
+    
+    .text__footer
+        color: white;
+        font-size: 15px;
+        align-self: center;
+        padding: 10px;
